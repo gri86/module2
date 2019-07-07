@@ -1,0 +1,23 @@
+[
+  {
+    "id": "111111",
+    "credential_id": "001",
+    "number": "3452",
+    "holder": "Artem",
+    "amount": 100000.50
+  },
+  {
+    "id": "111112",
+    "credential_id": "002",
+    "number": "1438",
+    "holder": "Viktor",
+    "amount": 50000.76
+  },
+  {
+    "id": "111113",
+    "credential_id": "003",
+    "number": "9845",
+    "holder": "Vladimir",
+    "amount": 43800.20
+  }
+]
