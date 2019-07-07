@@ -1,0 +1,26 @@
+[
+  {
+    "id": "001-aa",
+    "amount": 1000.00,
+    "holder": "Artem",
+    "number": "112365332"
+  },
+  {
+    "id": "002-aa",
+    "amount": 1000.00,
+    "holder": "Viktor",
+    "number": "192325332"
+  },
+  {
+    "id": "003-aa",
+    "amount": 1000.00,
+    "holder": "Sergey",
+    "number": "191115332"
+  },
+  {
+    "id": "004-aa",
+    "amount": 1000.00,
+    "holder": "Alex",
+    "number": "198222332"
+  }
+]
