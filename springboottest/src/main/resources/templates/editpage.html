@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            Таблица аккаунтов
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <form action="#" th:action="@{/update}" th:object="${account}" method="post">
+                <input class="form-control" type="text" id="id" name="id" th:value="*{id}" />
+                <input class="form-control" type="text" id="holder" name="holder" th:value="*{holder}" />
+                <input class="form-control" type="text" id="amount" name="amount" th:value="*{amount}" />
+                <input class="form-control" type="text" id="number" name="number" th:value="*{number}" />
+                <input class="btn btn-primary" type="submit"  value="Update" />
+            </form>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
