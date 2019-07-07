@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="consoleLogger" class="logger.ConsoleLogger" />
+    <bean id="fileLogger" class="logger.FileLogger" />
+    <bean id="bufferedFileLogger" class="logger.BufferedFileLogger">
+        <constructor-arg name="limit" value="10" />
+    </bean>
+
+    <bean id="calculator" class="calculator.Calculator">
+        <property name="logger" ref="fileLogger" />
+    </bean>
+
+</beans>
